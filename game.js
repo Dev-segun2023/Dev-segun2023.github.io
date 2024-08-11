@@ -75,7 +75,8 @@ function playGame(playerMove) {
     upDateScore();
     
 
-    document.querySelector('.js-moves').innerHTML = `you picked <img src="emojis/${playerMove}-emoji.png" alt="${playerMove}" class="move-icon"> computer picked <img src="emojis/${ComputerMove}-emoji.png" alt="" class="move-icon">`
+    document.querySelector('.js-moves').innerHTML =
+     `you picked <img src="emojis/${playerMove}-emoji.png" alt="${playerMove}" class="move-icon"> computer picked <img src="emojis/${ComputerMove}-emoji.png" alt="" class="move-icon">`
     
     document.querySelector('.js-result').innerHTML = `${result}!`
 
