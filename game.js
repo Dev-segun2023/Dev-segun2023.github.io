@@ -36,7 +36,7 @@ function playGame(playerMove) {
     let result;
 
 
-    if (playerMove === 'Rock') {
+    if (playerMove === 'rock') {
         if (ComputerMove === 'rock') {
             result = 'Tie';
         }else if (ComputerMove === 'paper') {
@@ -44,7 +44,7 @@ function playGame(playerMove) {
     }else if (ComputerMove === 'scissors') {
             result = 'You Win';
     }
-    }else if(playerMove === 'Paper') {
+    }else if(playerMove === 'paper') {
         if (ComputerMove === 'rock') {
             result = 'You Win';
         }else if (ComputerMove === 'paper') {
@@ -52,7 +52,7 @@ function playGame(playerMove) {
     }else if (ComputerMove === 'scissors') {
             result = 'You Lose';
     }
-    }else if(playerMove ===  'Scissors'){
+    }else if(playerMove ===  'scissors'){
         if (ComputerMove === 'rock') {
             result = 'You Lose';
         }else if (ComputerMove === 'paper') {
@@ -75,7 +75,7 @@ function playGame(playerMove) {
     upDateScore();
     
 
-    document.querySelector('.js-moves').innerHTML = `you picked <img src="emojis/${playerMove}-emoji.png" alt="${playerMove}" class="move-icon"> computer picked <img src="emojis/${ComputerMove}-emoji.png" alt="${ComputerMove}" class="move-icon">`
+    document.querySelector('.js-moves').innerHTML = `you picked <img src="emojis/${playerMove}-emoji.png" alt="${playerMove}" class="move-icon"> computer picked <img src="emojis/${ComputerMove}-emoji.png" alt="" class="move-icon">`
     
     document.querySelector('.js-result').innerHTML = `${result}!`
 
