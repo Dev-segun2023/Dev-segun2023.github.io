@@ -37,7 +37,7 @@ body{
 .score{
     font-weight: bold;
 }
-.reset{
+.reset , .auto-play-btn{
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
